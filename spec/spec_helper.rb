@@ -41,21 +41,21 @@ RSpec.configure do |config|
   Capybara.run_server        = false
   Capybara.default_max_wait_time = 14
 
-  puts "═" * 77
-  puts "               [Automation Testing Framework, 2016]"
-  puts "═" * 77
+  puts "═" * 48
+  puts "      [Automation Testing Framework, 2016]"
+  puts "═" * 48
   puts"
-████████╗███████╗███████╗████████╗
-╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝
-   ██║   █████╗  ███████╗   ██║
-   ██║   ██╔══╝  ╚════██║   ██║
-   ██║   ███████╗███████║   ██║
-   ╚═╝   ╚══════╝╚══════╝   ╚═╝
+       ████████╗███████╗███████╗████████╗
+       ╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝
+          ██║   █████╗  ███████╗   ██║
+          ██║   ██╔══╝  ╚════██║   ██║
+          ██║   ███████╗███████║   ██║
+          ╚═╝   ╚══════╝╚══════╝   ╚═╝
 
 "
-  puts "═" * 77
-  puts "                 [Host: #{Capybara.app_host}]"
-  puts "═" * 77
+  puts "═" * 48
+  puts "         [Host: #{Capybara.app_host}]"
+  puts "═" * 48
 
   # Maxmize window
   config.before(:each, js: true) do
