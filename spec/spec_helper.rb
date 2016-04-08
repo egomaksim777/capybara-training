@@ -39,7 +39,7 @@ RSpec.configure do |config|
   Capybara.current_driver    = :selenium
   Capybara.app_host          = Settings.get_config['host']
   Capybara.run_server        = false
-  Capybara.default_max_wait_time = 14
+  Capybara.default_max_wait_time = 7
 
   puts "═" * 48
   puts "      [Automation Testing Framework, 2016]"
