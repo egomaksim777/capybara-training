@@ -1,0 +1,6 @@
+---
+host: https://www.google.com
+## Browserstack Login: tania
+browserstack: http://tetiana:RK3TLy5Dw6Ppkco77Z9q@hub.browserstack.com/wd/hub
+# Dropbox Login:  Password:
+dropbox: ACCESS_TOKEN

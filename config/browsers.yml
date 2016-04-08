@@ -1,0 +1,63 @@
+---
+
+# Windows 7
+
+chrome48_windows_7:
+  os: Windows
+  os_version: 7
+  browser: Chrome
+  browser_version: 48.0
+
+firefox44_windows_7:
+  os: Windows
+  os_version: 7
+  browser: Firefox
+  browser_version: 44.0
+
+ie11_windows_7:
+  os: Windows
+  os_version: 7
+  browser: IE
+  browser_version: 11.0
+
+# Windows 10
+
+chrome48_windows_10:
+  os: Windows
+  os_version: 10
+  browser: Chrome
+  browser_version: 48.0
+
+edge_windows_10:
+  os: Windows
+  os_version: 10
+  browser: Edge
+  browser_version: 13.0
+
+# OS X El Capitan
+
+safari9_el_capitan:
+  os: OS X
+  os_version: El Capitan
+  browser: Safari
+  browser_version: 9.0
+
+# OS X Mavericks
+
+chrome39_mavericks:
+  os: OS X
+  os_version: Mavericks
+  browser: Chrome
+  browser_version: 39.0
+
+firefox34_mavericks:
+  os: OS X
+  os_version: Mavericks
+  browser: Firefox
+  browser_version: 34.0
+
+safari7_mavericks:
+  os: OS X
+  os_version: Mavericks
+  browser: Safari
+  browser_version: 7.0

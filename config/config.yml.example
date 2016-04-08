@@ -1,0 +1,4 @@
+---
+host: https://www.google.com
+browserstack: http://USERNAME:ACCESS_KEY@hub.browserstack.com/wd/hub
+dropbox: ACCESS_TOKEN
