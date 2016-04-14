@@ -40,3 +40,27 @@ Another examples you can find in file.
 
 # quick help
 # http://cheatrags.com/capybara
+
+## Setting up Ruby and Git on Windows
+I. Install Ruby
+1. http://rubyinstaller.org/
+2. Download and install Ruby 2.2.4, check 'Add Ruby executables to you PATH'.
+3. Download and extract to 'path_to_ruby/DevKit/  ----> C:\Ruby22\DevKit\  ) DEVELOPMENT KIT For use with Ruby 2.0 and above (32bits version only): DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe
+4. Run cmd.
+5. cd C:\Ruby22\DevKit\
+6. ruby dk.rb init
+7. ruby dk.rb review
+8. ruby dk.rb install
+9. https://sites.google.com/a/chromium.org/chromedriver/downloads -- Download the ChromeDriver and put it here: C:\Ruby22\bin\
+
+II. Install GIT
+1. https://git-scm.com/download/win -- download and install
+2. Go to https://github.com/egomaksim777/capybara-training
+
+III. Setup Project
+1. Start Git Bash.
+2. mkdir c:/Projects/ -- put here you project
+3. cd c:/Projects/capybara-training/
+4. gem install bundler
+5. bundle install
+6. bundle exec rspec
