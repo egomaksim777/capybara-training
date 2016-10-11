@@ -1,6 +1,6 @@
 ---
 host: https://www.google.com
-## Browserstack Login: tania
+## Browserstack Login:
 browserstack: ACCESS_TOKEN
 # Dropbox Login:  Password:
 dropbox: ACCESS_TOKEN
