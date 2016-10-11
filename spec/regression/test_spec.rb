@@ -5,7 +5,7 @@ describe 'Something', type: :feature, js: true do
     find('.lsb').click
     find('#uid_0').click
 
-    [7,8,9,10,11,12,14].each do |el|
+    [7,8,9,10,11,12,14,15].each do |el|
       all('img')[el].click
     end
   end
