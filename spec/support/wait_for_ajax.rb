@@ -1,4 +1,4 @@
-module WaitForAjax
+module Helpers
   def wait_for_ajax
     Capybara.default_max_wait_time = maximum
     Timeout.timeout(Capybara.default_max_wait_time) do

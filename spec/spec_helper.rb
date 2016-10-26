@@ -11,7 +11,6 @@ require 'fuubar'
 Dir['./spec/support/**/*.rb'].each { |f| require f }
 
 RSpec.configure do |config|
-  config.include WaitForAjax
   config.include Helpers
   config.include Capybara::DSL
 
