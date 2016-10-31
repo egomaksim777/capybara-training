@@ -9,7 +9,7 @@ describe 'Something', type: :feature, js: true do
       all('img')[el].click
     end
 
-    [9,10].each do |el|
+    [9,10,11].each do |el|
       all('img')[el].click
     end
   end
