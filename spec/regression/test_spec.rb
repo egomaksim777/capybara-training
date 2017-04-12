@@ -2,11 +2,18 @@ describe 'Something', type: :feature, js: true do
   it 'Something' do
     visit '/'
     fill_in 'q', with: 'kitty'
-    find('.lsb').click
-    find('#uid_0').click
+    sleep 1
 
-    [7,8,9,10,11].each do |el|
-      all('img')[el].click
+    find('[role="option"]', text: 'kitty', match: :first).click
+    sleep 1
+    find('#uid_0').click
+    sleep 1
+
+    begin
+      (20..24).each { |el| all('a')[el].click }
+    rescue Selenium::WebDriver::Error::StaleElementReferenceError
+      puts 'StaleElementReferenceError occured. Retrying...'
+      retry
     end
   end
 end

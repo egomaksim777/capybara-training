@@ -5,7 +5,7 @@ source "https://rubygems.org"
 
 gem "rspec"
 gem "capybara"
-gem "selenium-webdriver"
+gem 'selenium-webdriver', '2.53'
 gem "dropbox-sdk"
 gem "pry"
 gem 'chromedriver-helper'
