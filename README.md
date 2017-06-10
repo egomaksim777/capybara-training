@@ -1,5 +1,5 @@
 ## Shortly
-This application is using for testing features of FW application.
+This application is using for testing features of any application.
 It uses Capybara with Selenium driver.
 
 ## Installation

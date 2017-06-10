@@ -1,16 +1,17 @@
-# A sample Gemfile
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-# gem "rails"
-
-gem "rspec"
-gem "capybara"
-gem 'selenium-webdriver', '2.53.0'
-gem "dropbox-sdk"
-gem "pry"
-gem 'chromedriver-helper'
+gem 'airborne'
+gem 'capybara'
 gem 'capybara-screenshot'
-gem 'random_data'
-gem 'random-word-generator'
-gem 'fuubar'
+gem 'chromedriver-helper'
 gem 'cucumber'
+gem 'dropbox-sdk'
+gem 'faker'
+gem 'fuubar'
+gem 'pry'
+gem 'random-word-generator'
+gem 'random_data'
+gem 'rspec'
+gem 'rspec_html_formatter'
+gem 'rubocop'
+gem 'selenium-webdriver', '2.53'
