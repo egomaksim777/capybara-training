@@ -1,12 +1,11 @@
 describe 'Something', type: :feature, js: true do
-  it 'Something' do
+  it 'happens' do
     visit '/'
-    fill_in 'q', with: 'kitty'
+    fill_in 'q', with: 'ruby programming language'
     sleep 1
-
-    find('[role="option"]', text: 'kitty', match: :first).click
+    find('[role="option"]', text: 'ruby programming language', match: :first).click
     sleep 1
-    find('#uid_0').click
+    find('.qs', match: :first).click
     sleep 1
 
     begin

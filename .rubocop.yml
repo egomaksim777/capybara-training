@@ -1,0 +1,78 @@
+AllCops:
+  Exclude:
+    - 'node_modules/**/*'
+    - 'public/**/*'
+    - 'assets/**/*'
+    - 'config/application.rb'
+    - 'config/initializers/oj.rb'
+    - 'vendor/**/*'
+    - 'db/**/*'
+    - 'config/deploy.rb'
+    - 'config/deploy/*'
+    - 'Capfile'
+  TargetRubyVersion: 2.3
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+AccessModifierIndentation:
+  EnforcedStyle: outdent
+
+AndOr:
+  Enabled: false
+
+EmptyLinesAroundClassBody:
+  Enabled: false
+
+EmptyLinesAroundModuleBody:
+  Enabled: false
+
+EmptyLinesAroundMethodBody:
+  Enabled: false
+
+EmptyLinesAroundBlockBody:
+  Enabled: false
+
+EndAlignment:
+  EnforcedStyleAlignWith: variable
+
+LineLength:
+  Max: 120
+
+SpaceAroundEqualsInParameterDefault:
+  Enabled: false
+
+TrivialAccessors:
+  ExactNameMatch: true
+  AllowPredicates: true
+
+Style/SpaceBeforeFirstArg:
+  Enabled: false
+
+Style/CaseIndentation:
+  Enabled: false # Add our behaviour
+
+Style/BracesAroundHashParameters:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+

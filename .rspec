@@ -1,5 +1,5 @@
 --color
 --require spec_helper
---format Fuubar
---format html
---out rspec_results.html
+--format documentation
+--require rspec_html_formatter.rb
+--format RspecHtmlFormatter

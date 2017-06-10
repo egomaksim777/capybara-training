@@ -1,4 +1,5 @@
-rspec_results.html
 Gemfile.lock
 *.png
-debug.log
+*.log
+*.html
+/rspec_html_reports

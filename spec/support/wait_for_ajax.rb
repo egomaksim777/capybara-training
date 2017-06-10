@@ -1,21 +1,30 @@
 module Helpers
   def wait_for_ajax
-    Capybara.default_max_wait_time = maximum
-    Timeout.timeout(Capybara.default_max_wait_time) do
-      loop until finished_all_ajax_requests?
-    end
-    Capybara.default_max_wait_time = minimum
+    Timeout.timeout(max_timeout) { loop until finished_all_ajax_requests? }
   end
 
   def finished_all_ajax_requests?
-    page.evaluate_script('jQuery.active').zero?
+    evaluate_script('jQuery.active').zero?
   end
 
-  def minimum
-    minimum = 7
+  def max_timeout
+    60
   end
 
-  def maximum
-    maximum = 120
+  def min_timeout
+    7
+  end
+
+  def wait_for_ajax_updated
+    Timeout.timeout(max_timeout) do
+      diff = 1
+
+      while diff != 0
+        diff1 = evaluate_script('jQuery.active')
+        sleep 1
+        diff2 = evaluate_script('jQuery.active')
+        diff = diff1 - diff2
+      end
+    end
   end
 end

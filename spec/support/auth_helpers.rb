@@ -1,5 +1,7 @@
 module Helpers
   def login_with(email, password)
+    fill_in 'Email', with: email
+    fill_in 'Password', with: password
     email
   end
 
